@@ -15,8 +15,8 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.primio.primiocheck.mewkvl"
-    compileSdk = 37
-    ndkVersion = "29.0.14033849"
+    compileSdk = 35
+ndkVersion = "27.0.12077973"
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
@@ -27,7 +27,7 @@ android {
     defaultConfig {
         applicationId = "com.primio.primiocheck.mewkvl"
         minSdk = 26 // Android 8.0
-        targetSdk = 37
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
