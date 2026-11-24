@@ -12,9 +12,6 @@ jobs:
       - name: Baixar o código do repositório
         uses: actions/checkout@v4
 
-      - name: Configurar o Android SDK e aceitar licencas
-        uses: android-actions/setup-android@v3
-
       - name: Instalar o Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -25,7 +22,7 @@ jobs:
 
       - name: Gerar o APK
         run: flutter build apk --release
-
+        
       - name: Disponibilizar o APK para download
         uses: actions/upload-artifact@v4
         with:
