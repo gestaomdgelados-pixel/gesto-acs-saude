@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+import '../theme/theme.dart';
+import '../widgets/login/app_logo.dart';
+
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              AppLogo(),
+              SizedBox(height: AppTheme.spacingLg),
+              CircularProgressIndicator(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
